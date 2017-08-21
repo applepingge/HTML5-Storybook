@@ -457,7 +457,7 @@ PBS.KIDS.storybook.book = function (GLOBAL, PBS, storybookContainerElement, conf
 					} else if (pages[rightPageIndex].pageSound) {
 						// Play the page sound
 						loud();
-						audioPlayer.play(pages[leftPageIndex].pageSound);
+						audioPlayer.play(pages[rightPageIndex].pageSound);
 						audioPlayer.addEventListener("PLAY_COMPLETE", rightPageSoundComplete);
 					}
 				}
@@ -1381,7 +1381,7 @@ PBS.KIDS.storybook.book = function (GLOBAL, PBS, storybookContainerElement, conf
 	// http://paulirish.com/2011/requestanimationframe-for-smart-animating/
 	// http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
 	
-	// requestAnimationFrame polyfill by Erik Möller
+	// requestAnimationFrame polyfill by Erik MÃ¶ller
 	// fixes from Paul Irish and Tino Zijdel
 	(function() {
 	    var lastTime = 0;
